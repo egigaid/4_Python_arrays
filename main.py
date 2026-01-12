@@ -139,6 +139,7 @@ print(raides)
 # 5. Sugeneruokite 3 masyvus pagal 3 uždavinio sąlygą. Sudėkite masyvus, sudėdami atitinkamas reikšmes.
 # (turi gautis masyvas, kurio elementai, kaip pvz atrodo taip: “AAB”, “CBC”, “DDA”, 200 reikšmių).
 # Paskaičiuokite kiek skirtingų reikšmių kombinacijų gavote.
+print("---5. uzduotis----------------")
 
 raides1 = [random.choice(sarasas) for _ in range(200)]
 raides2 = [random.choice(sarasas) for _ in range(200)]
@@ -153,5 +154,14 @@ print(raides_bendras)
 
 ABCDkombinacijos = len(set(raides_bendras))
 print(f'Skirtingos reiksmiu kombinacijos: {ABCDkombinacijos}')
+
+# 6. Sugeneruokite du masyvus, kurių reikšmės yra atsitiktiniai skaičiai nuo 100 iki 999. Masyvų ilgiai 100. Masyvų reikšmės turi būti unikalios savo masyve (t.y. neturi kartotis).
+print("---6. uzduotis----------------")
+
+numbersunikalus1 = random.sample(range(100, 1000), 100) #random.sample is atsitiktiniu skaiciu 100-999 istraukia skaiciu, bet tik viena karta
+numbersunikalus2 = random.sample(range(100, 1000), 100)
+
+print(numbersunikalus1)
+print(numbersunikalus2)
 
 
